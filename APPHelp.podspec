@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name         = "APPHelp"
   s.version      = "0.0.1"
-  s.summary      = "A short description of APPHelp."
+  s.summary      = "category 常用宏 收集"
 
 
 
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/libo198615/APPHelp.git", :tag => "#{s.version}" }
 
-  s.source_files  = "Pod/*"
+  s.source_files  = "Pod/Category/*"
 
 #s.public_header_files = "Classes/**/*.h"
 

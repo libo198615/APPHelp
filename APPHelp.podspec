@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
 
 
-    s.license = { :type => 'MIT', :text => <<-LICENSE
+  s.license = { :type => 'MIT', :text => <<-LICENSE
                     Copyright PPAbner 2016-2017
                     LICENSE
                 }
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "http://EXAMPLE/APPHelp.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/libo198615/APPHelp.git", :tag => "#{s.version}" }
 
   s.source_files  = "Pod/*"
 

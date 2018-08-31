@@ -10,6 +10,8 @@
 
 @interface UIView (Help)
 
+- (void)setCornerRadius:(CGFloat)radius;
+
 - (CGFloat)left;
 
 - (CGFloat)right;
@@ -47,5 +49,7 @@
 - (void)setCenterY:(CGFloat)centerY;
 
 - (void)setOrigin:(CGPoint)point;
+
+- (void)showShadow;
 
 @end

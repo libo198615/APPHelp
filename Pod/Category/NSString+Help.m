@@ -47,4 +47,23 @@
     return outputString;
 }
 
++ (NSInteger)IntRandomLength:(NSInteger)length {
+    NSString *letters = @"0123456789";
+    NSMutableString *randomString = [NSMutableString stringWithCapacity: length];
+    
+    for (NSInteger i = 0; i < length; i++) {
+        [randomString appendFormat: @"%C", [letters characterAtIndex: arc4random_uniform((int)[letters length])]];
+    }
+    return [randomString integerValue];
+}
+
+- (BOOL)isNumber {
+    NSString *checkedNumString = self;
+    checkedNumString = [checkedNumString stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
+    if (checkedNumString.length > 0) {
+        return NO;
+    }
+    return YES;
+}
+
 @end

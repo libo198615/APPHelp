@@ -10,6 +10,11 @@
 
 @implementation UIView (Help)
 
+- (void)setCornerRadius:(CGFloat)radius {
+    self.layer.masksToBounds = YES;
+    self.layer.cornerRadius = radius;
+}
+
 - (CGFloat)left
 {
     return self.frame.origin.x;
@@ -121,6 +126,11 @@
     self.center = CGPointMake(self.center.x, centerY);
 }
 
-
+- (void)showShadow {
+    self.layer.shadowColor = [UIColor grayColor].CGColor;
+    self.layer.shadowOffset = CGSizeMake(5, 2);
+    self.layer.shadowOpacity = 0.7;
+    self.layer.shadowRadius = 5;
+}
 
 @end

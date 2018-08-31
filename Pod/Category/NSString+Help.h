@@ -10,4 +10,12 @@
 
 @interface NSString (Help)
 
+- (BOOL)isPhoneNumber;
+
+- (BOOL)isNotNilOrEmpty;
+
++ (NSInteger)IntRandomLength:(NSInteger)length;
+
+- (BOOL)isNumber;
+
 @end
